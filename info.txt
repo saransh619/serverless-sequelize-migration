@@ -1,0 +1,7 @@
+// For migration, need to do by this, 
+    npx sequelize-cli migration:generate --name create-posts --migrations-path src/custom/migrations
+// As there's issue in the script - "migrate-create": "npx dotenv serverless migrations create --name",
+
+
+//For create seed file,
+    npx sequelize-cli seed:generate --name users
