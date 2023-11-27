@@ -25,3 +25,5 @@ plugins:
 
 custom:
   migrationsPath: './src/tenant/migrations'
+  # dotenv:
+  #   path: .env.development
