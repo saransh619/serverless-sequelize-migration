@@ -26,3 +26,13 @@ custom:
   migrationsPath: './src/core/migrations'
   dotenv:
     path: .env
+  scripts:
+    seedCore: "./src/core/handlers/core-seed-handler.js"
+
+# functions:
+#   seedHandlerCore:
+#       handler: "./src/core/handlers/core-seed-handler.sequelizeSeedHandlerCore"
+#       events:
+#         - httpApi:
+#             path: /seed-core
+#             method: POST
