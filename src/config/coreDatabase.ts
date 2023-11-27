@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const config = {
+const coreDatabase = {
   development: {
     dialect: process.env.DB_DIALECT as Dialect,
     host: process.env.DB_HOST,
@@ -14,4 +14,4 @@ const config = {
   },
 };
 
-export default config;
+export default coreDatabase;
