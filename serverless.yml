@@ -8,3 +8,4 @@ provider:
 plugins:
   - serverless-sequelize-migrations
   - serverless-offline
+  - serverless-dotenv-plugin

@@ -27,6 +27,7 @@
     "@types/sequelize": "^4.28.19",
     "dotenv": "^16.3.1",
     "dotenv-cli": "^7.3.0",
+    "serverless-dotenv-plugin": "^6.0.0",
     "serverless-offline": "^13.3.0",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.2.0",
@@ -39,7 +40,6 @@
     "sequelize": "^6.35.1",
     "sequelize-cli": "^6.6.2",
     "serverless": "^3.38.0",
-    "serverless-dotenv-plugin": "^6.0.0",
     "serverless-sequelize-migrations": "^1.1.2"
   }
 }
