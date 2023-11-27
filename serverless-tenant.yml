@@ -1,8 +1,3 @@
-# extends: "serverless.yml"
-
-# custom:
-#   migrationsPath: './src/tenant/migrations'
-
 service: my-serverless-app
 
 useDotenv: true
@@ -22,8 +17,11 @@ plugins:
   - serverless-sequelize-migrations
   - serverless-offline
   - serverless-dotenv-plugin
+  - serverless-plugin-scripts
 
 custom:
   migrationsPath: './src/tenant/migrations'
-  # dotenv:
-  #   path: .env.development
+  dotenv:
+    path: .env
+  scripts:
+    seedTenant: "./src/tenant/handlers/tenant-seed.handler.js"
