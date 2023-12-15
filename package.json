@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is a demo project for using the functionality of Serverless Sequelize Migrations",
   "main": "index.js",
+  "author": "Saransh Pachhai",
   "scripts": {
     "deploy-core": "serverless deploy --config serverless-core.yml",
     "deploy-tenant": "serverless deploy --config serverless-tenant.yml",
