@@ -1,12 +1,13 @@
 # My Serverless Sequelize Project
 
-This is a demo project showcasing the functionality of Serverless Sequelize Migrations. The project is structured to support multiple databases for core and tenant environments.
+This demo project showcases the functionality of Serverless Sequelize Migrations, designed to support multiple databases for both core and tenant environments.
 
 ## Table of Contents
 
 - [Project Structure](#project-structure)
 - [Configuration](#configuration)
 - [Scripts](#scripts)
+- [Database Migration and Seeding](#database-migration-and-seeding)
 - [Deployment](#deployment)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
@@ -27,7 +28,7 @@ The project is organized into the following main directories:
   - `migrations`: Migrations for the tenant database.
   - `seeders`: Seeders for the tenant database.
 - **src/models**: Models for Comments, Post, Reply, User.
-- **.env**: Environment variables configuration.
+- **.env**: Environment variables configuration. See [.env.example](.env.example) for an example.
 - **serverless-core.yml**: Serverless configuration for core deployment.
 - **serverless-tenant.yml**: Serverless configuration for tenant deployment.
 - **serverless.yml**: Common Serverless configuration.
@@ -81,10 +82,11 @@ The project is set up for deployment using the Serverless framework. Use the pro
 ## Usage
 
 1. Clone the repository: `git clone https://github.com/saransh619/serverless-sequelize-migration.git`
-2. Navigate to the project directory: `cd my-serverless-sequelize-project`
+2. Navigate to the project directory: `cd serverless-sequelize-migration`
 3. Install dependencies: `npm install`
-4. Configure environment variables in the `.env` file.
-5. Run desired scripts using `npm run <script-name>`.
+4. Copy `.env.example` to create your `.env` file: `cp .env.example .env`
+5. Configure environment variables in the `.env` file based on your database setup.
+6. Run desired scripts using `npm run <script-name>`.
 
 ## Dependencies
 

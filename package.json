@@ -25,7 +25,6 @@
     "undo-seed-tenant": "sequelize db:seed:undo:all --config src/config/tenantDatabase.js --seeders-path src/tenant/seeders"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.9.4",
