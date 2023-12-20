@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "Saransh Pachhai",
   "scripts": {
+    "start": "ts-node --type-check src/server.ts",
     "deploy-core": "serverless deploy --config serverless-core.yml",
     "deploy-tenant": "serverless deploy --config serverless-tenant.yml",
     "remove-core": "serverless remove --config serverless-core.yml",
@@ -27,6 +28,7 @@
   "keywords": [],
   "license": "ISC",
   "devDependencies": {
+    "@types/express": "^4.17.21",
     "@types/node": "^20.9.4",
     "@types/sequelize": "^4.28.19",
     "dotenv": "^16.3.1",
