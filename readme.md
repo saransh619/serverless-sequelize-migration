@@ -10,6 +10,7 @@ This demo project showcases the functionality of Serverless Sequelize Migrations
 - [Database Migration and Seeding](#database-migration-and-seeding)
 - [Deployment](#deployment)
 - [Usage](#usage)
+- [Docker](#docker)
 - [Dependencies](#dependencies)
 
 ## Project Structure
@@ -88,6 +89,20 @@ The project is set up for deployment using the Serverless framework. Use the pro
 5. Configure environment variables in the `.env` file based on your database setup.
 6. Run desired scripts using `npm run <script-name>`.
 
+## Docker
+
+This project is Dockerized for easy containerization and deployment. The Docker image is available on [Docker Hub](https://hub.docker.com/r/saranshpachhai/my-serverless-app).
+
+To pull the Docker image, use the following command:
+
+```bash
+docker pull saranshpachhai/my-serverless-app:latest
+```
+To run the application in a Docker container, use:
+
+```bash
+docker run -p 3000:3000 saranshpachhai/my-serverless-app:latest
+```
 ## Dependencies
 
 - Express: Web framework for Node.js.
@@ -96,3 +111,15 @@ The project is set up for deployment using the Serverless framework. Use the pro
 - Other dependencies listed in `package.json`.
 
 Feel free to explore the project, modify configurations, and extend functionalities as needed.
+
+## Contributing
+
+We welcome contributions! Please follow our contribution guidelines.
+
+## License
+
+This Docker image is licensed under the MIT License.
+
+## Maintainer
+
+Maintained by Saransh Pachhai.
